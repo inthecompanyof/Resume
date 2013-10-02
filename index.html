@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+	<title>Benjamin Southworth: Resume</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+	<link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore|Life+Savers' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+	<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
+	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // set up hover panels
+            // although this can be done without JavaScript, we've attached these events
+            // because it causes the hover to be triggered when the element is tapped on a touch device
+            $('.hover').hover(function(){
+                $(this).addClass('flip');
+            },function(){
+                $(this).removeClass('flip');
+            });
+        });
+    </script>
+    <style>
+        .panel {
+            margin: 0 auto;
+            width: 130px;
+            height: 130px;  
+            position: relative;
+            font-size: .8em;
+            -webkit-perspective: 600px;
+            -moz-perspective: 600px;
+        }
+        /* -- make sure to declare a default for every property that you want animated -- */
+        /* -- general styles, including Y axis rotation -- */
+        .panel .front {
+            position: absolute;
+            top: 0;
+            z-index: 900;
+            width: inherit;
+            height: inherit;
+            text-align: center;
+            -webkit-transform: rotateX(0deg) rotateY(0deg);
+            -webkit-transform-style: preserve-3d;
+            -webkit-backface-visibility: hidden;
+            -moz-transform: rotateX(0deg) rotateY(0deg);
+            -moz-transform-style: preserve-3d;
+            -moz-backface-visibility: hidden;
+            /* -- transition is the magic sauce for animation -- */
+            -o-transition: all .4s ease-in-out;
+            -ms-transition: all .4s ease-in-out;
+            -moz-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+        .panel.flip .front {
+            z-index: 900;
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+        }
+        .panel .back {
+            position: absolute;
+            top: 0;
+            z-index: 800;
+            width: inherit;
+            height: inherit;
+            -webkit-transform: rotateY(-180deg);
+            -webkit-transform-style: preserve-3d;
+            -webkit-backface-visibility: hidden;
+ 
+            -moz-transform: rotateY(-180deg);
+            -moz-transform-style: preserve-3d;
+            -moz-backface-visibility: hidden;
+            /* -- transition is the magic sauce for animation -- */
+            -o-transition: all .4s ease-in-out;
+            -ms-transition: all .4s ease-in-out;
+            -moz-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+        .panel.flip .back {
+            z-index: 1000;
+            -webkit-transform: rotateX(0deg) rotateY(0deg);
+            -moz-transform: rotateX(0deg) rotateY(0deg);
+        }
+    </style>
+</head>
+
+<body>
+
+	<div class="menu">
+		<div class="container clearfix">
+
+			<div id="logo" class="grid_3">
+				<img src="images/logo_smallest.png">
+			</div>
+
+			<div id="nav" class="grid_9 omega">
+				<ul class="navigation">
+					<li data-slide="1">About</li>
+					<li data-slide="2">Tech City</li>
+					<li data-slide="3">3 Beards</li>
+					<li data-slide="7">Contact</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<div class="grid_4">
+				</div>	
+				<div class="hover panel">
+				    <div class="front">
+				        <div class="pad">
+				            <img src="images/metoo.png" alt="logo front" />
+				        </div>
+				    </div>
+				    <div class="back">
+				        <div class="pad">
+				            <img src="images/methree.png" alt="logo back" />
+				        </div>
+				    </div>
+				</div>
+
+				<div class="grid_4.omega">
+				</div>
+				<div class="clearfix"></div>	
+				<h1>Benjamin Southworth</h1>
+				<h2>Passionate and energetic communicator, facilitator, leader, manager, public speaker, founder and organiser for the UK entrepreneurial &amp; startup scene.</h2>
+				<h2>Committed advocate for structural change and Governmental engagement with the digital past, present and future. </h2>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<h2>Deputy Chief Executive, <a href="http://techcityuk.com">Tech City Investment Organisation.</a></h2>
+				<h4><i>July 2012 - July 2013</i></h4>
+				<p>
+					<ul>
+						<li>Increased and improved public perception of TCIO and Government Policies.
+						<li>Created greater public transparency about policy making and budget.
+						<li>Created a passionate and supportive Tech City Ecosystem amongst thought leaders across the Digital and Creative community.
+						<li>Refocussed the organisational structure to be "bottom up" and to foster a responsive, agile and iterative policy making partnership.
+						<li>Created partnerships with London Stock Exchange, EE, Bloomberg, The Observer, Guardian, Yahoo, and continued to support pre-existing partnerships.
+						<li>Assisted HM Government with rebuttal of EU policies most notably, "Right to be Forgotten" and "EU Cookie Law".
+						<li>Steered and oversaw the initial discussions and plans for the controversial Old Street Institute, liaising between stakeholders, Number 10 Downing Street and GLA.
+						<li>Increased Social Media presence to assist community engagement. 
+						<li>Redeveloped Tone of Voice, Positioning and Marketing approach of the organisation to appear less bureaucratic and authoritarian. 
+						<li>Urged Number 10 and Cabinet Office to posthumously pardon Alan Turing.
+						<li>Assisted with bringing Campus Party EU to London.
+						<li>Assisted with the doubled 4G connection speed across Tech City via partnership with EE.
+						<li>Liaised with world wide representatives of Entrepreneurial clusters to foster shared knowledge and learnings.
+						<li> Created partnerships with The Design Museum, The Barbican Centre, Toynbee Hall and City of London Corporation.
+				</ul>
+			</p>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<h2>Founder - <a href="http://3-beards.com">3 beards</a></h2>
+				<h4><i>July 2011 - Present</i></h4>
+					<ul>
+						<li>Created, organised and marketed London's most succesful entrepreneurial events company
+						<li>Grew Silicon Drinkabout from 20 attendees to 200 (limited now only by venue)
+						<li>Grew Digital Sizzle from 80 attendees to 700 (restricted only by venue )
+						<li>Created London Startups, London Startup Events Facebook groups ( each with 2k+ members )
+						<li>Created <a href="http://events.ldn.io">events.ldn.io</a> London's only startup events aggregator with 25k views each month, and 5k ical subscriptions.
+						<li>Created Chew The Fat, a discussion and interview platform. 
+						<li>Produced Art Hackathons with exhibitions in Whitechapel Gallery &amp; The Barbican
+						<li>Created bespoke Hackathons for corporate clients, including Lloyds TSB
+						<li>Created Don't Pitch Me, Bro! London's leading product demonstration and feedback event with a 6 month waitlist to present.
+					</ul>
+			</div>
+				<div id= "logos" class="grid_3">
+					<a href="http://www.thedigitalsizzle.com">	
+						<img src="http://3-beards.com/wp/wp-content/themes/3beards/img/digitalsizzlelogo-sm.png">
+					</a>
+				</div>	
+				<div id= "logos" class="grid_3">
+					<a href="http://www.chewthefat.io">
+						<img src="http://3-beards.com/wp/wp-content/themes/3beards/img/logo_chew-the-fat.png">
+					</a>	
+				</div>		
+				<div id= "logos" class="grid_3">
+					<a href="http://dont.pitchmebro.com">
+						<img src="http://3-beards.com/wp/wp-content/themes/3beards/img/dontpitchmebrologo-sm.png">
+					</a>
+				</div>	
+				<div id= "logos" class="grid_3">
+					<a href="http:///www.silicondrinkabout.com">
+						<img src="http://3-beards.com/wp/wp-content/themes/3beards/img/silicondrinkaboutlogo-sm.png">
+					</a>		
+				</div>	
+		</div>
+	</div>
+
+
+
+	<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+
+			<div id="content" class="grid_12">
+				<h2>Founder - <a href="http://www.techbikers.com">Tech Bikers</a></h2>
+				<h4><i>July 2012 - Present</i></h4>
+				<ul>
+					<li>Recruited and supported 100+ Riders from the London Tech Community
+					<li>Raised £80,000 for the charity Room to Read
+					<li>Oversaw social media, partnerships, events, logisitics and events management.
+			</div>
+
+		</div>
+	</div>
+
+	<div class="slide" id="slide5" data-slide="5" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+			<div id="content" class="grid_12">
+				<h2>Previous Related Experience</h2>
+					<ul>
+						<li><b>Head of Product, Hirematch.me </b>- reduced operating costs by 1000% through redeveloping the API and Software dependencies
+						<li><b>Head of Search Quality</b> - Taptu - Ensured maximum algorithm accuracy, managed team of 8, presented to investors, was part of the "Pivot Team", spent 3 months in Denver establishing US Office.
+						<li><b>Head of Training, Jagex</b> - Grew Customer service team by 900% in 12 months, 97% retention rate
+					</ul>		
+			</div>
+
+		</div>
+	</div>
+
+
+	<div class="slide" id="slide6" data-slide="6" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+			<div id="content" class="grid_12">
+				<h2>Board/Founder Positions &amp; Other things </h2>
+				<ul>
+					<li><a href="http://www.citymeetstech.com">City Meets Tech</a> - Angel Investment Platform for High Net Worth individuals to invest in SEIS startups
+					<li>Lean Capital - £5m investment fund focussing on SEIS investments, with a 1% operating cost.
+					<li>Changeworks.io - Procurement Portal connecting Large organisations to smaller, cheaper, vendors.
+					<li>Ada Lovelace Academy - Pre-Application Free School in East London for 16-19 to learn entrepreneurial, creative and digital skills.
+					<li>Member of the Greater London Authority Digital, Creative, Science &amp; Technology Local Enterprise Panel. 
+					<li>Board member for The Awesome Foundation 
+					<li>Visting Fellow at City University London
+					<li>Member of the The International Academy of Digital Arts and Sciences
+				</ul>
+			</div>
+		</div>
+	</div>	
+
+	<div class="slide" id="slide7" data-slide="7" data-stellar-background-ratio="0.5">
+		<div class="container clearfix">
+			<div id="content" class="grid_12">
+				<h2>Social &amp; Internet Locations</h2>
+				<br>	
+				<div class="grid_3">
+					<a href="http://www.twitter.com/inthecompanyof">
+					<img src="images/twitter.png">
+					<h3> Twitter </h3></a>
+				</div>	
+				<div class="grid_3">
+					<a href="http://www.facebook.com/benjamin.southworth">
+					<img src="images/facebook.png">
+					<h3> Facebook </h3></a>
+						
+				</div>	
+				<div class="grid_3">
+					<a href="http://uk.linkedin.com/in/benjaminsouthworth/">
+					<img src="images/linkedin.png">
+					<h3> LinkedIn </h3></a>
+				</div>	
+				<div class="grid_3.omega">
+					<a href="mailto:benjamin.southworth@gmail.com">
+					<img src="images/sparow.png">
+					<h3> Email Me </h3> </a>
+				</div>	
+			</div>
+		</div>
+	</div>				
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+	<script type="text/javascript" src="js/waypoints.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
+</body>
+</html>
